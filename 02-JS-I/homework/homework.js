@@ -63,10 +63,10 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y) {
-    return "true"
+  if (x === y) {
+    return true;
   } else {
-    return "false"
+    return false;
   }
 }
 function tienenMismaLongitud(str1, str2) {
@@ -74,9 +74,9 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (str1.lenght === str2.lenght) {
-    return "true"
+    return true;
   } else {
-    return "false"
+    return false;
   }
   
 }
@@ -86,9 +86,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return "true"
+    return true;
   } else {
-    return "false"
+    return false;
   }
 }
 
@@ -97,9 +97,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num > 50) {
-    return "true"
+    return true
   } else {
-    return "false"
+    return false
   }
 }
 
