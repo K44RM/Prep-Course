@@ -85,7 +85,7 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0;
-  for (var i = 0; i < array.length; i++){
+  for (var i = 0; i < numeros.length; i++){
     suma = suma + numeros [i];
   }
 
@@ -154,7 +154,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana"
   }
-  return "Es dia laboral"
+  return "Es dia Laboral"
 } 
 
 
@@ -257,9 +257,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  
-
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      suma = suma + 2;
+      array.push(suma);
+    }
+  }
+  return array;
 }
+
 
 
 // No modificar nada debajo de esta línea
