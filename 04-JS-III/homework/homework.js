@@ -51,7 +51,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshitf (elemento);
+  array.unshift(elemento);
   return array;
 }
 
@@ -84,7 +84,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = 0
+  var suma = 0;
   for (var i = 0; i < array.length; i++){
     suma = suma + numeros [i];
 }
@@ -107,6 +107,14 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var maximo = numeros[0];
+  for(var i = 1; i < numeros.length; i++) {
+    if(numeros[i] > maximo) { 
+      maximo = numeros[i];
+    }
+  }
+  return maximo;
+ 
 }
 
 
